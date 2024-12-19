@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://ton-api-gateway-url.amazonaws.com';
+const API_URL = 'lambda-url';
 
 export const getItems = () => axios.get(`${API_URL}/items`);
 export const getItem = (id) => axios.get(`${API_URL}/items/${id}`);
